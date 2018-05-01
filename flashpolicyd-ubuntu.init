@@ -28,7 +28,7 @@ if [ -r /etc/default/$prog ]; then
 fi
 
 start() {
-	echo -n $"Starting $desc ($prog): "
+        log_daemon_msg "Starting $desc ($prog)"
 	start-stop-daemon -S --name $prog --exec ${BINDIR}/${prog} -- --timeout=${TIMEOUT} --xml=${XML} --logfreq=${LOGFREQ} --logfile=${LOGFILE} --user=${USER} --port=${PORT}
 	RETVAL=$?
 	echo 
@@ -37,7 +37,7 @@ start() {
 }
 
 stop() {
-	echo -n $"Stopping $desc ($prog): "
+        log_daemon_msg "Stopping $desc ($prog)"
 	killproc $prog
 	RETVAL=$?
 	echo
