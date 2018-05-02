@@ -1,0 +1,4 @@
+#This file should be placed as: /etc/default/flashpolicyd
+XML=/etc/flashpolicyd/flashpolicy.xml
+LOGFILE=/var/log/flashpolicyd.log
+BINDIR=/opt/flashpolicyd
