@@ -278,7 +278,7 @@ class PolicyServer
 
     # run this in a timeout block, clients will have --timeout seconds to complete the transaction or go away
     begin
-      timeout(@timeout.to_i) do
+      Timeout.timeout(@timeout.to_i) do
         loop do
           request = client.gets
 
