@@ -1,2 +1,3 @@
-Full information can be found at http://code.google.com/p/flashpolicyd/
+This was forked from the project found at http://code.google.com/p/flashpolicyd/
 
+This version now works with Ruby 2.5.1
