@@ -1,0 +1,10 @@
+[Unit]
+Description=flash policy server
+
+[Service]
+WorkingDirectory=/asi/flashpolicyd/
+ExecStart=/asi/flashpolicyd/flashpolicyd-ubuntu.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=default.target
