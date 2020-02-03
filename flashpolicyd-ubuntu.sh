@@ -16,7 +16,7 @@ prog="flashpolicyd"
 # these can be overrode in /etc/sysconfig/flashpolicyd
 RETVAL=0
 TIMEOUT=10
-XML=/usr/local/etc/flashpolicy.xml
+XML=/asi/conf/flashpolicyd/flashpolicy.xml
 LOGFREQ=1800
 LOGFILE=/var/log/flashpolicyd.log
 USER=root
